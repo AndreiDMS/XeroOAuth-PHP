@@ -12,6 +12,13 @@ class ComposerStaticInit076ade064d1009ffc50efce409e42fd2
         'Xero' => __DIR__ . '/../..' . '/lib/Xero.php',
         'XeroOAuth' => __DIR__ . '/../..' . '/lib/XeroOAuth.php',
         'XeroOAuthException' => __DIR__ . '/../..' . '/lib/XeroOAuth.php',
+        'Xero\\endpoints\\Endpoint' => __DIR__ . '/../..' . '/lib/endpoints/Endpoint.php',
+        'Xero\\endpoints\\Invoices' => __DIR__ . '/../..' . '/lib/endpoints/Invoices.php',
+        'Xero\\objects\\Contact' => __DIR__ . '/../..' . '/lib/objects/Contact.php',
+        'Xero\\objects\\Invoice' => __DIR__ . '/../..' . '/lib/objects/Invoice.php',
+        'Xero\\objects\\LineItem' => __DIR__ . '/../..' . '/lib/objects/LineItem.php',
+        'Xero\\objects\\TrackingCategory' => __DIR__ . '/../..' . '/lib/objects/TrackingCategory.php',
+        'Xero\\objects\\XeroObject' => __DIR__ . '/../..' . '/lib/objects/XeroObject.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

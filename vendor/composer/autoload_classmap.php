@@ -11,4 +11,11 @@ return array(
     'Xero' => $baseDir . '/lib/Xero.php',
     'XeroOAuth' => $baseDir . '/lib/XeroOAuth.php',
     'XeroOAuthException' => $baseDir . '/lib/XeroOAuth.php',
+    'Xero\\endpoints\\Endpoint' => $baseDir . '/lib/endpoints/Endpoint.php',
+    'Xero\\endpoints\\Invoices' => $baseDir . '/lib/endpoints/Invoices.php',
+    'Xero\\objects\\Contact' => $baseDir . '/lib/objects/Contact.php',
+    'Xero\\objects\\Invoice' => $baseDir . '/lib/objects/Invoice.php',
+    'Xero\\objects\\LineItem' => $baseDir . '/lib/objects/LineItem.php',
+    'Xero\\objects\\TrackingCategory' => $baseDir . '/lib/objects/TrackingCategory.php',
+    'Xero\\objects\\XeroObject' => $baseDir . '/lib/objects/XeroObject.php',
 );
