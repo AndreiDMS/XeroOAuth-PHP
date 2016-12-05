@@ -17,10 +17,19 @@ This library is designed to get a developer up and running quickly with the OAut
 
 
 ## Setup
-To get setup, you will need to modify the values in the \_config.php file to your own requirements and application settings or see the customised example file for each different application type, public.php, private.php or partner.php.
-_Special options for Partner applications_ should be commented out for non-partner applications if using the \_config.php file.
+To get setup, you will need to modify the values in the \config.php file to your own requirements and application settings or see the customised example file for each different application type, public.php, private.php or partner.php.
+_Special options for Partner applications_ should be commented out for non-partner applications if using the \config.php file.
+
+Set your consumer and secret key in \config.php.
+For Private or Partner app types, copy the certificates in the cert folder. Make sure they are named properly or update the path in \config.php.
 
 ## Usage
+
+### Create a Xero instance
+    
+    require_once APP_PATH . '/lib/Xero/vendor/autoload.php';
+    
+    $xero = new Xero();
 
 There are a number of functions used when interacting with Xero:
 

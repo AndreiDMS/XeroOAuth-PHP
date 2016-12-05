@@ -1,5 +1,10 @@
 <?php
 /**
+ * XeroOAuth wrapper: 
+ * sets parent constructor configuration for easy instantiation and
+ * performs some connection checks.
+ * 
+ * Request format defaults to JSON instead of XML
  * 
  */
 class Xero extends XeroOAuth 
@@ -21,7 +26,8 @@ class Xero extends XeroOAuth
         
         $checkErrors = count($initialCheck);
         
-        if ($checkErrors > 0) {
+        if ($checkErrors > 0)
+        {
             foreach ($initialCheck as $check)
             {
                 echo 'Error: ' . $check . PHP_EOL;
@@ -32,7 +38,6 @@ class Xero extends XeroOAuth
             $this->config['access_token'] = $this->config['consumer_key'];
             $this->config['access_token_secret'] = $this->config['shared_secret'];
         }
-        
     }
     
     /**
